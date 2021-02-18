@@ -61,8 +61,15 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  background: center;
 }
 
+.aboutZina {
+  background: url(../images/aboutZina.svg) center;
+}
+
+.color-change-2x{-webkit-animation:color-change-2x 1s linear infinite alternate both;animation:color-change-2x 1s linear infinite alternate both}
+@-webkit-keyframes color-change-2x{0%{border-color:#ffffff}100%{border-color:#000000}}@keyframes color-change-2x{0%{border-color:#ffffff}100%{border-color:#000000}}
 
 .cover-vlink {
   position: absolute;
@@ -893,7 +900,7 @@ a {
   line-height: 52px;
   display: inline-block;
   border-radius: 54px;
-  border-bottom: 4px solid rgba(0, 0, 0.2, 0.2);
+  border: 4px solid rgba(0, 0, 0.2, 0.2);
   background-size: cover;
   color: #fff;
   font-weight: 800;
