@@ -93,7 +93,7 @@
 
 			setTimeout(function(){
 				window.location = goTo;
-				},1500);       
+				},3000);       
 				});
 
 
