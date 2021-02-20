@@ -434,7 +434,7 @@ a {
 }
 .navigation-menu .inner ul li a {
   float: right;
-  font-size: 4vw;
+  font-size: 3.2vw;
   color: #fff;
   font-weight: 800;
   transform: translateY(200%);
@@ -478,7 +478,7 @@ a {
 }
 .navigation-menu .inner ul li ul li {
   display: block;
-  transform: translateY(-5px);
+  transform: translateY(-7px);
 }
 .navigation-menu .inner ul li ul li a {
   font-size: 26px;
@@ -502,7 +502,7 @@ a {
 }
 .navigation-menu.open ul li {
   margin: 0;
-transform: translateY(7rem);
+transform: translateY(11rem);
 }
 .navigation-menu.open ul li:nth-child(1) a {
   transition-delay: 0.8s;
@@ -524,6 +524,9 @@ transform: translateY(7rem);
 }
 .navigation-menu.open ul li:nth-child(7) a {
   transition-delay: 1.4s;
+}
+.navigation-menu.open ul li:nth-child(8) a {
+  transition-delay: 1.6s;
 }
 .navigation-menu.open ul li a {
   transform: translateY(0);
@@ -2315,6 +2318,19 @@ main {
     padding-left: 120px;
   }
 
+  .header .swiper-container .swiper-button-prev {
+    position: absolute;
+    right: 0;
+    color: rgb(215, 33, 33);
+top: 90%;  }
+
+  .header .swiper-container .swiper-button-next {
+    position: absolute;
+    right: 0;
+    color: rgb(215, 33, 33);
+top: 90%;    
+  }
+
   .header .swiper-container .swiper-slide h5 {
     font-size: 28px;
   }
@@ -2487,15 +2503,13 @@ background-size: cover;  }
     position: absolute;
     right: 0;
     color: rgb(215, 33, 33);
-    top:40rem;
-  }
+top: 90%;  }
 
   .header .swiper-container .swiper-button-next {
     position: absolute;
     right: 0;
     color: rgb(215, 33, 33);
-    top:40rem;
-    
+top: 90%;    
   }
 
   .header .slide-inner {
@@ -2679,3 +2693,23 @@ background-size: cover;  }
 }
 
 /*# sourceMappingURL=style.css.map */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .header .swiper-container .swiper-button-prev {
+      position: absolute;
+      right: 0;
+      color: rgb(215, 33, 33);
+  top: 80%;  }
+  
+    .header .swiper-container .swiper-button-next {
+      position: absolute;
+      right: 0;
+      color: rgb(215, 33, 33);
+  top: 80%;    
+    }
+  
+
+}
