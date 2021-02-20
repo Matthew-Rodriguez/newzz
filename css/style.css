@@ -68,13 +68,17 @@ body {
   background: url(../images/aboutZina.svg) center;
 }
 
+
+.works .works-grid li figure figcaption h3 {
+  font-size: 30px;
+}
 .color-change-2x{-webkit-animation:color-change-2x 1s linear infinite alternate both;animation:color-change-2x 1s linear infinite alternate both}
 @-webkit-keyframes color-change-2x{0%{border-color:#ffffff}100%{border-color:#000000}}@keyframes color-change-2x{0%{border-color:#ffffff}100%{border-color:#000000}}
 
 .cover-vlink {
   position: absolute;
   bottom: 100px;
-  left: 10%;
+  left: 37%;
 }
 .cover-vlink a {
   color: rgb(167, 19, 19);
@@ -209,11 +213,13 @@ a {
   width: 10px;
   height: 100%;
   float: left;
-  background: #313434;
+  background: #1d1f1f;
   transition-delay: 0.4s;
 }
 .transition-overlay.active {
   top: 0;
+  background: #1d1f1f;
+
 }
 .transition-overlay.active .layer {
   width: 100%;
@@ -440,6 +446,7 @@ a {
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   position: relative;
+  
 }
 .navigation-menu .inner ul li a:hover {
   text-decoration: none;
@@ -471,13 +478,14 @@ a {
 }
 .navigation-menu .inner ul li ul li {
   display: block;
+  transform: translateY(-5px);
 }
 .navigation-menu .inner ul li ul li a {
   font-size: 26px;
 }
 .navigation-menu .inner ul li ul li a:before {
   height: 4px;
-  bottom: 8px;
+
 }
 .navigation-menu.open {
   top: 0;
@@ -494,6 +502,7 @@ a {
 }
 .navigation-menu.open ul li {
   margin: 0;
+transform: translateY(7rem);
 }
 .navigation-menu.open ul li:nth-child(1) a {
   transition-delay: 0.8s;
@@ -510,8 +519,15 @@ a {
 .navigation-menu.open ul li:nth-child(5) a {
   transition-delay: 1s;
 }
+.navigation-menu.open ul li:nth-child(6) a {
+  transition-delay: 1.2s;
+}
+.navigation-menu.open ul li:nth-child(7) a {
+  transition-delay: 1.4s;
+}
 .navigation-menu.open ul li a {
   transform: translateY(0);
+  
 }
 
 
@@ -996,6 +1012,7 @@ a {
   top: 0;
   background: none;
   cursor: url("../images/arrow-left.png"), auto;
+  color:rgb(227, 220, 220);
 }
 .header .swiper-carousel .swiper-button-next {
   width: 20%;
@@ -1005,6 +1022,7 @@ a {
   top: 0;
   background: none;
   cursor: url("../images/arrow-right.png"), auto;
+  color:rgb(227, 220, 220);
 }
 .header .swiper-carousel .swiper-slide {
   height: 100%;
@@ -1329,7 +1347,9 @@ main {
   padding: 0;
 }
 .works .works-grid.two-cols li {
-  width: 50%;
+  width: 30%;
+  border: 12px solid rgb(0, 0, 0);
+
 }
 .works .works-grid li {
   width: 33.33333%;
@@ -2392,6 +2412,42 @@ main {
     padding: 30px 25px;
   }
 
+  .homebtn {
+    display: unset !important;
+  }
+
+  .works .works-grid {
+    width: 93%;
+  }
+
+  .cover-vlink {
+    position: absolute;
+    bottom: 100px;
+    left: 10%;
+  }
+  .navigation-menu .inner ul li ul li {
+    transform: translateY(91px);
+    font-size: 13px;
+  }
+
+  .navigation-menu .inner ul li ul li a{
+    font-size: 18px;
+    transform: translateY(20px);
+  }
+
+  .works .works-grid.two-cols li {
+    width: 110%;
+    border: 12px solid rgb(0, 0, 0);
+  }
+
+  .works .works-grid li figure figcaption h3 {
+    font-size: 20px;
+  }
+ 
+
+  .aboutZina {
+background-size: cover;  }
+
   .navbar .logo a img {
     height: 40px;
   }
@@ -2406,10 +2462,15 @@ main {
 
   .navigation-menu .inner ul {
     width: 100%;
+    transform: translateY(-8rem);
+
   }
 
   .navigation-menu .inner ul li a {
-    font-size: 40px;
+    font-size: 20px;
+    width: 100%;
+    line-height: 3.5rem;
+
   }
 
   .header:after {
@@ -2423,11 +2484,18 @@ main {
   }
 
   .header .swiper-container .swiper-button-prev {
-    display: none;
+    position: absolute;
+    right: 0;
+    color: rgb(215, 33, 33);
+    top:40rem;
   }
 
   .header .swiper-container .swiper-button-next {
-    display: none;
+    position: absolute;
+    right: 0;
+    color: rgb(215, 33, 33);
+    top:40rem;
+    
   }
 
   .header .slide-inner {
