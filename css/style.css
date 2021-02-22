@@ -64,6 +64,8 @@ body {
   background: center;
 }
 
+
+
 .aboutZina {
   background: url(../images/aboutZina.svg) center;
 }
@@ -74,6 +76,8 @@ body {
 }
 .color-change-2x{-webkit-animation:color-change-2x 1s linear infinite alternate both;animation:color-change-2x 1s linear infinite alternate both}
 @-webkit-keyframes color-change-2x{0%{border-color:#ffffff}100%{border-color:#000000}}@keyframes color-change-2x{0%{border-color:#ffffff}100%{border-color:#000000}}
+
+
 
 .cover-vlink {
   position: absolute;
@@ -527,6 +531,9 @@ transform: translateY(15rem);
 }
 .navigation-menu.open ul li:nth-child(8) a {
   transition-delay: 1.6s;
+}
+.navigation-menu.open ul li:nth-child(9) a {
+  transition-delay: 1.8s;
 }
 .navigation-menu.open ul li a {
   transform: translateY(0);
@@ -2429,6 +2436,10 @@ top: 90%;
   .navbar {
     padding: 30px 25px;
   }
+
+
+
+
 #press {
   font-size: 2.5rem;
 }
@@ -2537,7 +2548,8 @@ top: 90%;
   }
 
   .header .swiper-container .swiper-pagination-fraction {
-    display: none;
+    transform: scale(.7);
+    left: 0;
   }
 
   .page-header .inner-content .inner {

@@ -147,10 +147,11 @@
 			var interleaveOffset = 0.5;
 			var swiperOptions = {
 				loop: true,
-				speed: 1000,
+				speed: 2000,
 				parallax: true,
 					autoplay: {
-					delay: 5500,
+					delay: 3500,
+				
 					disableOnInteraction: false,
 				  },
 				grabCursor: true,
